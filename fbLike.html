@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="fb-like-bg">
+    <!--todo  fb like-->
+    <div class="fb-like" style="position: absolute; top: 20%; right: 18%;"
+         data-href="https://www.facebook.com/DigitalDuel"
+         data-layout="button_count" data-action="like" data-size="large"
+         data-show-faces="false" data-share="false"></div>
+</div>
+<script src="jquery-1.12.0.min.js">
+</script>
+<script>
+    //    appId: pg_config.fb_app_id,
+    //    这里的fb_app_id值得是fb的应用编号,
+
+    function initFbZan() {
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=" + pg_config.fb_app_id;
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: pg_config.fb_app_id,
+                xfbml: true,
+                version: 'v2.4'
+            });
+        };
+    }
+
+    initFbZan();
+</script>
+</body>
+</html>
