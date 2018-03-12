@@ -20,7 +20,7 @@
 注册完成之后我们可以在应用的资料里得到类似密钥的两个值，
 app_id和app_secret，这两个值是访问facebook url的必要参数；
 
-![截图](https://github.com/JoPure/facebook/img/3.png)
+![截图](https://github.com/JoPure/facebook/blob/master/img/3.png)
 
 - <code>app_id</code> :      应用编号
 - <code>app_secret</code>  :  app密钥
@@ -33,7 +33,7 @@ Oauth_url:
 多个逗号分隔，facebook会校验当前访问的域名解析后对应的ip是否在白名单里面；
 如图：
 
-![截图](https://github.com/JoPure/facebook/img/2.png)
+![截图](https://github.com/JoPure/facebook/blob/master/img/2.png)
 
 
 
